@@ -31,6 +31,8 @@ public class Town {
   }
 
   public void setResidents(int residents) {
+    if ( residents <= 0)
+        throw new IllegalArgumentException(" number of residents cannot be 0 or smaller.");
     this.residents = residents;
   }
 
